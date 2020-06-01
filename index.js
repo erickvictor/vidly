@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const Joi = require('@hapi/joi')
 const genres = require('./routes/genres')
 const express = require('express')
 const app = express()
