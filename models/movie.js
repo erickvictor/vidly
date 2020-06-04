@@ -1,6 +1,6 @@
 const Joi = require('@hapi/joi')
 const mongoose = require('mongoose')
-const {} = require('./genres')
+const {genreSchema} = require('./genre')
 
 const Movie = mongoose.model('Movies', new mongoose.Schema({
   title: {

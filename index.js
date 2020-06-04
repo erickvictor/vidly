@@ -6,7 +6,7 @@ const rentals = require('./routes/rentals')
 const express = require('express')
 const app = express()
 
-const url = 'mongodb://mosh:db987654@ds357708.mlab.com:57708/playground'
+const url = 'mongodb://mosh:db987654@ds141208.mlab.com:41208/playground'
 const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true
