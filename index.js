@@ -1,3 +1,4 @@
+const config = require('config')
 const Joi = require('@hapi/joi')
 Joi.objectId = require('joi-objectid')(Joi)
 const mongoose = require('mongoose')
@@ -11,6 +12,11 @@ const express = require('express')
 const app = express()
 
 mongoose.set('useCreateIndex', true)
+
+if (!config.get('jwtPrivateKey')) {
+  console.error('FATAL ERROR: jwtPrivateKey is not defined')
+  process.exit(1)
+}
 
 const url = 'mongodb://mosh:db987654@ds141208.mlab.com:41208/playground'
 const options = {
