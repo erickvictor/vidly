@@ -839,6 +839,19 @@ mongodb@3.5.7:
   optionalDependencies:
     saslprep "^1.0.0"
 
+mongodb@^3.3.3:
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.5.8.tgz#34550856449b745d145873734bf922c12d6b9caa"
+  integrity sha512-jz7mR58z66JKL8Px4ZY+FXbgB7d0a0hEGCT7kw8iye46/gsqPrOEpZOswwJ2BQlfzsrCLKdsF9UcaUfGVN2HrQ==
+  dependencies:
+    bl "^2.2.0"
+    bson "^1.1.4"
+    denque "^1.4.1"
+    require_optional "^1.0.1"
+    safe-buffer "^5.1.2"
+  optionalDependencies:
+    saslprep "^1.0.0"
+
 mongoose-legacy-pluralize@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
@@ -1418,6 +1431,14 @@ wide-align@^1.1.0:
   integrity sha512-QGkOQc8XL6Bt5PwnsExKBPuMKBxnGxWWW3fU55Xt4feHozMUhdUMaBCk290qpm/wG5u/RSKzwdAC4i51YigihA==
   dependencies:
     string-width "^1.0.2 || 2"
+
+winston-mongodb@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/winston-mongodb/-/winston-mongodb-5.0.1.tgz#c2819e9e39d4c601b43de92f10a6a791f957c686"
+  integrity sha512-ZLwAqh8DO9JrZYOjhbjvRKZU7v+X3qgPEp75uEVvYZPsV6LxgcR0xWlleCpc5hN+AakEMo7klO/WZoUhsmeDqw==
+  dependencies:
+    mongodb "^3.3.3"
+    winston-transport "^4.3.0"
 
 winston-transport@^4.3.0:
   version "4.3.0"
