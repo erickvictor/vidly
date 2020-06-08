@@ -2,6 +2,9 @@
   "name": "vidly",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "jest --testEnvironment=node"
+  },
   "license": "MIT",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
@@ -16,5 +19,8 @@
     "mongoose": "^5.9.16",
     "winston": "^3.2.1",
     "winston-mongodb": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
   }
 }

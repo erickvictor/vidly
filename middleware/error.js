@@ -9,7 +9,12 @@ const options = {
 
 const logger = winston.createLogger({
   transports: [ // <-- removed the transports from index.js, put them here.
-    new winston.transports.Console(),
+    new winston.transports.Console({
+      format: winston.format.combine(
+        winston.format.colorize(),
+        winston.format.simple()
+      )
+    }),
     new winston.transports.File({ filename: 'logfile.log' }),
     new winston.transports.MongoDB({ db: url, options: options, metaKey: "meta" }) // <-- { metaKey: "meta" } just makes sure the field is saved under the name 'meta' in the database, probably not necessary.
   ]
