@@ -1,3 +1,4 @@
 {
-  "jwtPrivateKey": "1234"
+  "jwtPrivateKey": "1234",
+  "db": "mongodb://mosh:db987654@ds125486.mlab.com:25486/play_test"
 }

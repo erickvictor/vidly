@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --testEnvironment=node"
+    "test": "jest --verbose --coverage --testEnvironment=node"
   },
   "license": "MIT",
   "dependencies": {
@@ -21,6 +21,7 @@
     "winston-mongodb": "^5.0.1"
   },
   "devDependencies": {
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
   }
 }
